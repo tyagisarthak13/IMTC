@@ -10,6 +10,7 @@ const Login = () => {
     password: "",
   });
   const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false); // Add loading state
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -18,6 +19,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     try {
       const res = await axios.post("http://localhost:5000/api/auth/signin", {
@@ -25,22 +27,22 @@ const Login = () => {
         password: formData.password,
       });
 
-      alert(res.data.message);
-      setFormData({ email: "", password: "" });
-
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("userName", res.data.user.name);
       localStorage.setItem("user", JSON.stringify(res.data.user));
 
-      setTimeout(() => {
-        navigate("/dashboard");
-      }, 1000);
+      alert(res.data.message);
+      setFormData({ email: "", password: "" });
+
+      navigate("/dashboard", { replace: true });
     } catch (error) {
       if (error.response) {
         alert(error.response.data.message);
       } else {
         alert("Something went wrong. Try again!");
       }
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -106,9 +108,10 @@ const Login = () => {
 
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white font-medium py-2.5 rounded-lg hover:bg-blue-700 transition-colors shadow-sm mt-3 cursor-pointer"
+          disabled={loading}
+          className="w-full bg-blue-600 text-white font-medium py-2.5 rounded-lg hover:bg-blue-700 transition-colors shadow-sm mt-3 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          Sign In
+          {loading ? "Signing In..." : "Sign In"}
         </button>
 
         {/* Divider */}
@@ -120,7 +123,7 @@ const Login = () => {
 
         {/* Sign Up Link */}
         <p className="text-center text-gray-600 text-sm">
-          Don’t have an account?{" "}
+          Don't have an account?{" "}
           <Link
             to="/signup"
             className="text-blue-600 font-medium hover:underline"

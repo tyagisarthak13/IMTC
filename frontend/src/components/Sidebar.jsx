@@ -34,6 +34,10 @@ const Sidebar = ({ isMobileOpen, setIsMobileOpen }) => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
+    localStorage.removeItem("userName");
+
     setTimeout(() => {
       navigate("/");
     }, 500);

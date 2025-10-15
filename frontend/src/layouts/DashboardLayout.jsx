@@ -1,11 +1,32 @@
-import React, { useState } from "react";
-import { Outlet } from "react-router";
+import React, { useState, useEffect } from "react";
+import { Outlet, useNavigate } from "react-router";
 import Sidebar from "@/components/Sidebar";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "../components/theme-provider";
 
 const DashboardLayout = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const [isCheckingAuth, setIsCheckingAuth] = useState(true);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+      navigate("/login", { replace: true });
+    } else {
+      setIsCheckingAuth(false);
+    }
+  }, [navigate]);
+
+  if (isCheckingAuth) {
+    return (
+      <div className="flex justify-center items-center min-h-screen bg-background">
+        <div className="text-lg">Loading...</div>
+      </div>
+    );
+  }
+
   return (
     <ThemeProvider defaultTheme="dark">
       <div className="flex min-h-screen bg-background">

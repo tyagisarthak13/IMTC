@@ -31,6 +31,9 @@ const imageSchema = new mongoose.Schema(
       type: Date,
       default: Date.now,
     },
+    title: { type: String, default: "" },
+    description: { type: String, default: "" },
+    subject: { type: String, default: "" },
   },
   { timestamps: true }
 );

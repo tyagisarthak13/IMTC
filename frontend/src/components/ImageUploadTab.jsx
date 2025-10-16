@@ -152,7 +152,7 @@ const ImageUploadTab = ({
                 onClick={handleRemoveImage}
                 variant="destructive"
                 size="sm"
-                className="mt-2 gap-1"
+                className="mt-2 gap-1 cursor-pointer"
               >
                 <Trash2 size={14} />
                 Remove Photo
@@ -215,7 +215,7 @@ const ImageUploadTab = ({
           {isImageLoaded && !isUploaded && (
             <Button
               onClick={handleSlotUpload}
-              className="w-full h-10 text-base gap-2"
+              className="w-full h-10 text-base gap-2 cursor-pointer"
               variant="secondary"
               disabled={isUploading} // Disable during upload
             >

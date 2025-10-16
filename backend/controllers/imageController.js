@@ -93,3 +93,30 @@ export const deleteImage = async (req, res) => {
       .json({ message: "Error deleting image", error: error.message });
   }
 };
+
+export const updateImageContent = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { title, description, subject } = req.body;
+
+    const updatedImage = await Image.findByIdAndUpdate(
+      id,
+      {
+        title,
+        description,
+        subject,
+        updatedAt: new Date(),
+      },
+      { new: true }
+    );
+
+    if (!updatedImage) {
+      return res.status(404).json({ message: "Image not found" });
+    }
+
+    res.json(updatedImage);
+  } catch (error) {
+    console.error("Error updating image content: ", error);
+    res.status(500).json({ message: "Server Error" });
+  }
+};

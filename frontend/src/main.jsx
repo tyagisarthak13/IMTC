@@ -23,6 +23,7 @@ import AEPSPage from "./pages/dashboardpages/Aeps.jsx";
 import Flight from "./pages/dashboardpages/Flight.jsx";
 import Recharge from "./pages/dashboardpages/Recharge.jsx";
 import ImagesPage from "./pages/Images.jsx";
+import ContentPage from "./pages/Content.jsx";
 
 const router = createBrowserRouter([
   {
@@ -95,6 +96,7 @@ const router = createBrowserRouter([
       },
       { path: "recharge", element: <Recharge /> },
       { path: "images", element: <ImagesPage /> },
+      { path: "content", element: <ContentPage /> },
       // ... other dashboard routes
     ],
   },

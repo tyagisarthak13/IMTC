@@ -4,6 +4,7 @@ import {
   getTabImages,
   uploadImage,
   deleteImage,
+  updateImageContent,
 } from "../controllers/imageController.js";
 import auth from "../middlewares/auth.js";
 
@@ -16,5 +17,7 @@ router.get("/tab/:tabName", auth, getTabImages);
 router.post("/upload", auth, uploadImage);
 
 router.delete("/:id", auth, deleteImage);
+
+router.put("/:id/content", auth, updateImageContent);
 
 export default router;

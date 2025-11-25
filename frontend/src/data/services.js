@@ -3,10 +3,9 @@ const raw = [
     name: "Aeps",
     icon: "/services/_AePS.png",
     description: "AEPS: Aadhaar Enabled Payment System for cash-in/cash-out.",
-    info: `Aadhar Enabled Payment Solutions (AePS)
-IMTC has made a significant leap in supporting the government's initiative to drive financial inclusion across India through its Aadhaar banking services.
-With IMTC, customers can now easily access services such as Cash Withdrawal, Balance Enquiry, Mini-Statements, Aadhaar Pay, and Cash Deposits. These services are available through the Simple Mudra platform, benefiting not only the customers but also retailers, particularly in rural areas. Retailers earn a commission on each transaction they complete, providing them with an additional income stream and contributing to the overall growth of their businesses.`,
-    image: "/services/aeps service.webp",
+    info: `IMTC has made a significant leap in supporting the government's initiative to drive financial inclusion across India through its Aadhaar banking services.
+With IMTC, customers can now easily access services such as Cash Withdrawal, Balance Enquiry, Mini-Statements, Aadhaar Pay, and Cash Deposits. These services are available through the IMTC platform, benefiting not only the customers but also retailers, particularly in rural areas.`,
+    image: "/services/aeps-service-2.png",
     featuresTitle: "Why retailers prefer to become IMTC AePS Service Provider",
     features: [
       "Higher Commission",
@@ -124,6 +123,7 @@ At IMTC, we are revolutionizing the way merchants conduct transactions. Our Micr
     name: "POS",
     icon: "/services/POS.png",
     description: "UPI or Card, Simplified in One Device, One App!",
+    info: "IMTC POS machines offer a complete payment solution that accepts both UPI and card payments through a single device and application. Our advanced POS systems provide seamless transaction processing, real-time reporting, and secure payment handling for businesses of all sizes. Whether it's debit cards, credit cards, or UPI payments, our unified platform ensures smooth and efficient payment experiences for both merchants and customers.",
     image: "/services/pos.webp",
     featuresTitle: "The ultimate card machine for all your business needs",
     features: [
@@ -137,9 +137,9 @@ At IMTC, we are revolutionizing the way merchants conduct transactions. Our Micr
     name: "Travel Package",
     icon: "/services/Tour Package.png",
     description: "Empowering Merchants to Offer Unmatched Travel Experiences",
-    info: "IMTC offers a comprehensive B2B travel package booking service that lets agents and merchants provide a wide array of travel options, from custom packages to group adventures. Through our app and web portal, you can book exclusive travel packages, tailored to every client’s need—from family vacations and adventure getaways to religious tours and corporate travel (FIT & MICE). As a trusted partner, our mission is to empower merchants with high-quality, affordable travel options that drive increased revenue.",
+    info: "IMTC offers a comprehensive B2B travel package booking service that lets agents and merchants provide a wide array of travel options, from custom packages to group adventures. Through our app and web portal, you can book exclusive travel packages, tailored to every client’s need—from family vacations and adventure getaways to religious tours and corporate travel (FIT & MICE).",
     image: "/services/travel.webp",
-    featuresTitle: "Why Choose Simple Mudra for Travel Package Bookings?",
+    featuresTitle: "Why Choose IMTC for Travel Package Bookings?",
     features: [
       "Diverse Range of Packages",
       "Competitive Pricing",
@@ -151,11 +151,10 @@ At IMTC, we are revolutionizing the way merchants conduct transactions. Our Micr
   {
     name: "Bus Booking",
     icon: "/services/_Bus.png",
-    description:
-      "Book Your Bus Tickets with Simple Mudra Fast, Easy & Affordable!",
+    description: "Book Your Bus Tickets with IMTC - Fast, Easy & Affordable!",
     info: "With IMTC, you can provide your customers with seamless bus booking services across India while earning a solid commission on every booking. Our platform offers a wide network of bus routes, easy-to-use booking tools, and exclusive rewards for merchants who want to grow their income by meeting the travel needs of their community.",
     image: "/services/bus.jpeg",
-    featuresTitle: "Why Choose Simple Mudra for Bus Booking?",
+    featuresTitle: "Why Choose IMTC for Bus Booking?",
     features: [
       "Vast Network of Routes",
       "Instant Bookings & Confirmations",
@@ -206,6 +205,14 @@ At IMTC, we are revolutionizing the way merchants conduct transactions. Our Micr
     icon: "/services/_Utilities Bill Payment (1).png",
     description: "Welcome to the future of effortless bill payments with IMTC!",
     info: "As a retailer, offering bill payment services is not just a convenience—it's a strategic way to enhance your profitability. With IMTC, you can seamlessly integrate the Bharat Bill Payment System (BBPS) into your operations. This allows you to boost your revenue while providing an enhanced customer experience.",
+    image: "/services/utility.jpg",
+    featuresTitle: "Why Choose IMTC for Utility Bill Payments?",
+    features: [
+      "One-Stop Bill Payment Solution",
+      "Wide Range of Billers Supported",
+      "Instant Payment Processing",
+      "24/7 Service Availability",
+    ],
   },
 ];
 

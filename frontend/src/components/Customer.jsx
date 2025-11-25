@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Star, Quote, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
+import CountUp from "react-countup";
 
 const Customer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -89,13 +90,13 @@ const Customer = () => {
     <div className="w-full py-18 bg-gradient-to-br from-blue-50 to-gray-50">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+        <div className="text-center mb-16" data-aos="fade-up">
+          <div className="inline-flex items-center gap-2 bg-blue-100 text-indigo-900 px-4 py-2 rounded-full text-sm font-semibold mb-4">
             <Quote className="w-4 h-4" />
             TESTIMONIALS
           </div>
           <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-gray-900 mb-4">
-            <span className="text-blue-600">What</span> Our Customers Say
+            <span className="text-indigo-900">What</span> Our Customers Say
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Discover why thousands of merchants across India trust IMTC for
@@ -104,7 +105,7 @@ const Customer = () => {
         </div>
 
         {/* Main Testimonial Carousel */}
-        <div className="relative max-w-4xl mx-auto">
+        <div className="relative max-w-4xl mx-auto" data-aos="fade-up">
           {/* Navigation Arrows */}
           <button
             onClick={prevTestimonial}
@@ -133,7 +134,7 @@ const Customer = () => {
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <div className="absolute -bottom-4 -right-4 bg-blue-600 text-white p-3 rounded-2xl shadow-lg">
+                  <div className="absolute -bottom-4 -right-4 bg-indigo-900 text-white p-3 rounded-2xl shadow-lg">
                     <Quote className="w-6 h-6" />
                   </div>
                 </div>
@@ -187,7 +188,7 @@ const Customer = () => {
                 onClick={() => goToTestimonial(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 cursor-pointer ${
                   index === currentIndex
-                    ? "bg-blue-600 w-8"
+                    ? "bg-indigo-900 w-8"
                     : "bg-gray-300 hover:bg-gray-400"
                 }`}
               />
@@ -196,24 +197,39 @@ const Customer = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-2xl mx-auto">
+        {/* <div
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-2xl mx-auto"
+          data-aos="fade-up"
+        >
           <div className="text-center p-6 bg-white rounded-2xl shadow-lg border border-gray-100">
-            <div className="text-3xl font-bold text-blue-600 mb-2">10K+</div>
+            <div className="text-3xl font-bold text-blue-600 mb-2">
+              <CountUp end={4000} duration={2} separator="," />+
+            </div>
             <div className="text-gray-600">Happy Merchants</div>
           </div>
+
           <div className="text-center p-6 bg-white rounded-2xl shadow-lg border border-gray-100">
-            <div className="text-3xl font-bold text-green-600 mb-2">99%</div>
+            <div className="text-3xl font-bold text-green-600 mb-2">
+              <CountUp end={99} duration={2} />%
+            </div>
             <div className="text-gray-600">Satisfaction Rate</div>
           </div>
+
           <div className="text-center p-6 bg-white rounded-2xl shadow-lg border border-gray-100">
-            <div className="text-3xl font-bold text-purple-600 mb-2">50+</div>
+            <div className="text-3xl font-bold text-purple-600 mb-2">
+              <CountUp end={12} duration={2} />+
+            </div>
             <div className="text-gray-600">Cities Covered</div>
           </div>
+
           <div className="text-center p-6 bg-white rounded-2xl shadow-lg border border-gray-100">
-            <div className="text-3xl font-bold text-orange-600 mb-2">24/7</div>
+            <div className="text-3xl font-bold text-orange-600 mb-2">
+              <CountUp end={24} duration={2} />
+              /7
+            </div>
             <div className="text-gray-600">Support</div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

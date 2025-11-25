@@ -101,7 +101,7 @@ const Carousel = () => {
       </div>
 
       {/* Dots Indicator */}
-      <div className="flex justify-center items-center gap-2 mt-8">
+      {/* <div className="flex justify-center items-center gap-2 mt-8">
         {Array.from({ length: slides.length - cardsPerView + 1 }).map(
           (_, index) => (
             <button
@@ -115,7 +115,7 @@ const Carousel = () => {
             />
           )
         )}
-      </div>
+      </div> */}
     </div>
   );
 };

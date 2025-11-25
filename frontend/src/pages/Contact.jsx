@@ -42,13 +42,19 @@ const Contact = () => {
     }
   };
   return (
-    <div className="min-h-screen pb-20 bg-gradient-to-b from-blue-50 to-gray-50">
-      <h1 className="font-extrabold text-blue-900 text-5xl py-12 text-center drop-shadow-md">
+    <div className="min-h-screen pb-20 bg-gradient-to-b from-blue-50 to-gray-50 py-20">
+      {/* <h1
+        className="font-extrabold text-indigo-900 text-5xl py-12 text-center drop-shadow-md"
+        data-aos="fade-in"
+      >
         IMTC Payment Solution LLP
-      </h1>
+      </h1> */}
 
       <div className="flex justify-center px-4">
-        <div className="bg-white rounded-3xl shadow-2xl p-10 md:p-16 w-full max-w-[1200px]">
+        <div
+          className="bg-white rounded-3xl shadow-2xl p-10 md:p-16 w-full max-w-[1200px] scale-[1.05]"
+          data-aos="fade-in"
+        >
           <h3 className="text-3xl font-bold text-gray-900 mb-4">
             Get In Touch
           </h3>
@@ -59,42 +65,44 @@ const Contact = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-8" data-aos="fade-right">
               <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
                 <div className="flex-1 bg-blue-50 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-300 p-6 flex flex-col items-center justify-center text-center">
-                  <Phone className="text-blue-700 w-12 h-12 mb-3" />
+                  <Phone className="text-indigo-900 w-12 h-12 mb-3" />
                   <h3 className="text-xl font-semibold text-gray-900 mb-1">
                     Mobile
                   </h3>
                   <span className="text-gray-700 font-medium">
-                    +91 9319985780
+                    +91 9315773460
                   </span>
                 </div>
 
                 <div className="flex-1 bg-blue-50 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-300 p-6 flex flex-col items-center justify-center text-center">
-                  <Mail className="text-blue-700 w-12 h-12 mb-3" />
+                  <Mail className="text-indigo-900 w-12 h-12 mb-3" />
                   <h3 className="text-xl font-semibold text-gray-900 mb-1">
                     Email
                   </h3>
                   <span className="text-gray-700 font-medium">
-                    support@imtc.com
+                    imtcgurmeet@gmail.com
                   </span>
                 </div>
               </div>
 
               <div className="bg-blue-50 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-300 p-6 flex flex-col items-center justify-center text-center">
-                <MapPin className="text-blue-700 w-12 h-12 mb-3" />
+                <MapPin className="text-indigo-900 w-12 h-12 mb-3" />
                 <h3 className="text-xl font-semibold text-gray-900 mb-1">
                   Location
                 </h3>
                 <span className="text-gray-700 font-medium px-4">
-                  I-Thum Tower-B, Office No 820, Industrial Area, Sector 62,
-                  Noida, Uttar Pradesh 201309
+                  Sector 63, Noida, Uttar Pradesh 201309
                 </span>
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-lg p-8 md:p-10">
+            <div
+              className="bg-white rounded-2xl shadow-lg p-8 md:p-10"
+              data-aos="fade-up"
+            >
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 Fill Your Details
               </h3>
@@ -105,7 +113,7 @@ const Contact = () => {
                   placeholder="Your Name *"
                   value={formData.name}
                   onChange={handleChange}
-                  className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                  className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-700 focus:border-indigo-700 outline-none transition"
                   required
                 />
                 <input
@@ -114,7 +122,7 @@ const Contact = () => {
                   placeholder="Your Email *"
                   value={formData.email}
                   onChange={handleChange}
-                  className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                  className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-700 focus:border-indigo-700 outline-none transition"
                   required
                 />
                 <input
@@ -123,7 +131,7 @@ const Contact = () => {
                   placeholder="Message Subject *"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                  className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-700 focus:border-indigo-700 outline-none transition"
                   required
                 />
                 <input
@@ -132,7 +140,7 @@ const Contact = () => {
                   placeholder="Your Number *"
                   value={formData.number}
                   onChange={handleChange}
-                  className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                  className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-700 focus:border-indigo-700 outline-none transition"
                   required
                 />
                 <textarea
@@ -141,13 +149,13 @@ const Contact = () => {
                   rows="5"
                   value={formData.message}
                   onChange={handleChange}
-                  className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition resize-none"
+                  className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-700 focus:border-indigo-700 outline-none transition resize-none"
                   required
                 ></textarea>
                 <button
                   type="submit"
                   disabled={loading}
-                  className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 px-5 rounded-2xl hover:from-blue-700 hover:to-blue-800 transition font-semibold shadow-md hover:shadow-lg mt-2 flex items-center justify-center gap-2 cursor-pointer"
+                  className="bg-gradient-to-r from-indigo-900 to-indigo-900 text-white py-3 px-5 rounded-2xl hover:from-indigo-800 hover:to-indigo-800 transition font-semibold shadow-md hover:shadow-lg mt-2 flex items-center justify-center gap-2 cursor-pointer"
                 >
                   {loading && (
                     <Loader className="animate-spin w-5 h-5 text-white" />

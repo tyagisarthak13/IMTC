@@ -60,8 +60,8 @@ const FAQ = () => {
       {/* Header */}
       <div className="text-center mb-12">
         <div className="flex justify-center mb-4">
-          <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-            <HelpCircle className="w-6 h-6 text-blue-600" />
+          <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center">
+            <HelpCircle className="w-6 h-6 text-indigo-700" />
           </div>
         </div>
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -78,6 +78,7 @@ const FAQ = () => {
           <div
             key={index}
             className="bg-white rounded-2xl shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300 overflow-hidden"
+            data-aos="fade-up"
           >
             <button
               onClick={() => toggleAccordion(index)}
@@ -85,7 +86,7 @@ const FAQ = () => {
             >
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2"></div>
-                <h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                <h3 className="text-lg font-semibold text-gray-900 group-hover:text-indigo-700 transition-colors duration-300">
                   {faq.question}
                 </h3>
               </div>
@@ -95,7 +96,7 @@ const FAQ = () => {
                   activeIndex === index ? "rotate-180" : ""
                 }`}
               >
-                <ChevronDown className="w-5 h-5 text-gray-500 group-hover:text-blue-600" />
+                <ChevronDown className="w-5 h-5 text-gray-500 group-hover:text-indigo-700" />
               </div>
             </button>
 
@@ -107,13 +108,13 @@ const FAQ = () => {
               }`}
             >
               <div className="px-6 pb-6">
-                <div className="w-12 h-px bg-gradient-to-r from-blue-500 to-transparent mb-4"></div>
+                <div className="w-12 h-px bg-gradient-to-r from-indigo-700 to-transparent mb-4"></div>
                 <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
 
                 {/* Additional Help */}
                 {faq.category === "Support" && (
                   <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
-                    <p className="text-sm text-blue-700">
+                    <p className="text-sm text-indigo-700">
                       💡 <strong>Quick Tip:</strong> For faster resolution, have
                       your User ID ready when contacting support.
                     </p>
@@ -126,7 +127,10 @@ const FAQ = () => {
       </div>
 
       {/* Still Have Questions */}
-      <div className="text-center mt-12 p-8 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-3xl border border-blue-100">
+      <div
+        className="text-center mt-12 p-8 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-3xl border border-blue-100"
+        data-aos="fade-in"
+      >
         <h3 className="text-2xl font-bold text-gray-900 mb-3">
           Still have questions?
         </h3>
@@ -136,7 +140,7 @@ const FAQ = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
-            className="bg-blue-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer"
+            className="bg-indigo-800 text-white px-8 py-3 rounded-xl font-semibold hover:bg-indigo-900 transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer"
             onClick={() => navigate("/contact")}
           >
             Contact Support

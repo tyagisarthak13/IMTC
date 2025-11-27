@@ -9,7 +9,6 @@ import Contact from "./pages/Contact.jsx";
 import Home from "./pages/Home.jsx";
 import Company from "./pages/Company.jsx";
 import Login from "./pages/Login.jsx";
-import Signup from "./pages/SignUp.jsx";
 import ForgotPassword from "./pages/ForgotPassword.jsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
 import RefundPolicy from "./pages/RefundPolicy.jsx";
@@ -60,14 +59,6 @@ const router = createBrowserRouter([
         path: "/terms",
         element: <Terms />,
       },
-      // {
-      //   path: "/agent",
-      //   element: <BeneficiaryDashboard />,
-      // },
-      // {
-      //   path: "/agent2",
-      //   element: <BeneficiaryDashboard2 />,
-      // },
     ],
   },
 ]);

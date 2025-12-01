@@ -4,19 +4,19 @@ import services from "../data/services";
 
 const ServicesList = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-indigo-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        {/* Header Section */}
-        <div className="text-center mb-16" data-aos="fade-in">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Our <span className="text-indigo-900">Services</span>
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover our comprehensive range of financial and digital services
-            designed to empower your business and customers
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-indigo-50">
+      {/* New Gradient Header Section (Same Style as Your Contact Page) */}
+      <section className="w-full bg-gradient-to-r from-indigo-900 to-indigo-700 text-white px-6 sm:px-10 lg:px-16 py-13 mb-16 text-center">
+        <div className="max-w-3xl mx-auto" data-aos="fade-up">
+          <h1 className="text-3xl md:text-6xl font-bold mb-3">Our Services</h1>
+          <p className="text-sm md:text-[19px] opacity-90">
+            Explore our secure financial and digital solutions designed to
+            empower your business.
           </p>
         </div>
+      </section>
 
+      <div className="max-w-7xl mx-auto py-10">
         {/* Services Grid - Wider horizontal cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {services.map((service) => (
@@ -25,7 +25,7 @@ const ServicesList = () => {
               className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group border border-gray-200 flex flex-col"
               data-aos="fade-up"
             >
-              {/* Service Image - Wider aspect ratio */}
+              {/* Service Image */}
               <div className="h-40 overflow-hidden">
                 <img
                   src={service.image}
@@ -34,9 +34,8 @@ const ServicesList = () => {
                 />
               </div>
 
-              {/* Content Container - More horizontal space */}
+              {/* Content */}
               <div className="p-6 flex-1 flex flex-col">
-                {/* Icon and Title */}
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <img
@@ -50,12 +49,10 @@ const ServicesList = () => {
                   </h3>
                 </div>
 
-                {/* Description */}
                 <p className="text-gray-700 mb-3 leading-relaxed font-medium text-sm">
                   {service.description}
                 </p>
 
-                {/* Full Info - No truncation */}
                 {service.info && (
                   <div className="mb-3 flex-1">
                     <p className="text-gray-600 text-xs leading-relaxed">
@@ -64,7 +61,6 @@ const ServicesList = () => {
                   </div>
                 )}
 
-                {/* All Features - Full display */}
                 {service.features && service.features.length > 0 && (
                   <div className="mt-auto">
                     <h4 className="font-semibold text-indigo-900 mb-2 text-xs">
@@ -85,7 +81,6 @@ const ServicesList = () => {
                 )}
               </div>
 
-              {/* Bottom accent */}
               <div className="h-1 bg-gradient-to-r from-indigo-900 to-indigo-700"></div>
             </div>
           ))}

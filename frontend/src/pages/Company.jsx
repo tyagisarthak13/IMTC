@@ -8,11 +8,18 @@ import {
 } from "lucide-react";
 import { Link } from "react-router";
 
+import AmanSharma from "../assets/AmanSharma.jpg";
+import AmarendraKumar from "../assets/AmarendraKumar.jpg";
+import PrakharChaturvedi from "../assets/PrakharChaturvedi.png";
+import SarthakTyagi from "../assets/SarthakTyagi.jpg";
+import SumitChauhan from "../assets/SumitChauhan.jpg";
+import CEO from "../assets/CEO.jpg";
+
 const Company = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-indigo-900 to-indigo-700 text-white py-18 px-6 md:px-16 text-center">
+      <section className="relative bg-gradient-to-r from-indigo-900 to-indigo-700 text-white py-14 px-6 md:px-16 text-center">
         <h1 className="text-5xl font-bold mb-4" data-aos="fade-up">
           About IMTC Payment Solution LLP
         </h1>
@@ -102,7 +109,7 @@ const Company = () => {
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/Gurmeet Singh sir.jpg"
+              src={CEO}
               alt="Founder & CEO"
               className="w-full max-w-sm rounded-xl shadow-lg object-cover"
             />
@@ -163,9 +170,9 @@ const Company = () => {
           {/* Image (right side on desktop) */}
           <div className="flex justify-center order-1 md:order-2">
             <img
-              src="/director-image.jpg"
+              src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png"
               alt="Director"
-              className="w-full max-w-sm rounded-xl shadow-lg object-cover"
+              className="w-full max-w-sm rounded-xl object-cover opacity-80"
             />
           </div>
         </div>
@@ -183,32 +190,32 @@ const Company = () => {
               {
                 name: "Amarendra Kumar",
                 role: "IT HEAD",
-                img: "/team/Amarendra Kumar.jpg",
+                img: AmarendraKumar,
                 desc: "Leads our tech innovation with a focus on scalable fintech solutions.",
               },
               {
                 name: "Sumit Chauhan",
                 role: "Head of Operations",
-                img: "/team/Sumit Chauhan.jpg",
+                img: SumitChauhan,
                 desc: "Ensures smooth daily operations and partner satisfaction.",
               },
               {
                 name: "Aman Sharma",
                 role: "Senior Software Developer",
-                img: "/team/Aman Sharma.jpg",
-                desc: "Bridges customer needs with our services to ensure delightful experiences.",
+                img: AmanSharma,
+                desc: "Leads complex development tasks, architects scalable systems, and mentors the engineering team.",
               },
               {
                 name: "Sarthak Tyagi",
                 role: "Junior Software Developer",
-                img: "/team/Sarthak Tyagi.jpg",
-                desc: "Strategizes campaigns and brand growth across digital platforms.",
+                img: SarthakTyagi,
+                desc: "Builds and maintains core application features while contributing to efficient backend and frontend development.",
               },
               {
                 name: "Prakhar Chaturvedi",
                 role: "Junior App Developer",
-                img: "/team/Prakhar Chaturvedi.png",
-                desc: "Manages company accounts and financial integrity with precision.",
+                img: PrakharChaturvedi,
+                desc: "Develops intuitive mobile app interfaces and ensures smooth, high-performance user experiences.",
               },
             ].map((member, i) => (
               <div

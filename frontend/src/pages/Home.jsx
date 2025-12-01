@@ -7,13 +7,19 @@ import Customer from "../components/Customer";
 import FAQ from "../components/FAQ";
 import { Link } from "react-router";
 
+import homeBanner from "../assets/homeBanner.png";
+import iafLogo from "../assets/iafLogo.png";
+import iso9001 from "../assets/iso9001.png";
+import kabLogo from "../assets/kabLogo.png";
+import homeBanner2 from "../assets/homeBanner2.jpg";
+
 const Home = () => {
   return (
     <div className="bg-gray-50">
       {/* ===== Responsive Hero Section (REPLACED) ===== */}
       <div className="relative w-full h-[60vh] md:h-screen">
         <img
-          src="/payments-banner-7.png"
+          src={homeBanner}
           alt="payment"
           className="w-full h-full object-cover"
         />
@@ -152,7 +158,7 @@ const Home = () => {
           >
             <div className="bg-white p-5 rounded-xl shadow-md h-50 w-60 flex items-center justify-center">
               <img
-                src="/certifications/iso9001.png"
+                src={iso9001}
                 alt="ISO 9001"
                 className="h-40 w-auto object-contain"
               />
@@ -160,7 +166,7 @@ const Home = () => {
 
             <div className="bg-white p-5 rounded-xl shadow-md h-50 w-60 flex items-center justify-center">
               <img
-                src="/certifications/kab-logo.png"
+                src={kabLogo}
                 alt="KAB Accredited"
                 className="h-40 w-auto object-contain"
               />
@@ -168,7 +174,7 @@ const Home = () => {
 
             <div className="bg-white p-5 rounded-xl shadow-md h-50 w-60 flex items-center justify-center">
               <img
-                src="/certifications/iaf-logo-4.png"
+                src={iafLogo}
                 alt="IAF Logo"
                 className="h-40 w-auto object-contain"
               />
@@ -188,7 +194,7 @@ const Home = () => {
         data-aos="fade-up"
       >
         <img
-          src="/for_Customers_desktop_44ccfd0a45.jpg"
+          src={homeBanner2}
           alt="For Customers"
           className="w-full h-full object-cover"
         />

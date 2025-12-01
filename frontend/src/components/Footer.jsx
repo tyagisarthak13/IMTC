@@ -2,6 +2,14 @@ import React from "react";
 import { Link } from "react-router";
 import { FiPhoneCall } from "react-icons/fi";
 
+import iafLogo from "../assets/iafLogo.png";
+import iso9001 from "../assets/iso9001.png";
+import kabLogo from "../assets/kabLogo.png";
+import linkedin from "../assets/linkedin.png";
+import facebook from "../assets/facebook.png";
+import youtube from "../assets/youtube.png";
+import insta from "../assets/insta.png";
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
@@ -25,19 +33,19 @@ const Footer = () => {
             {/* Certification Logos */}
             <div className="flex items-center gap-4 mt-5">
               <img
-                src="/certifications/iso9001.png"
+                src={iso9001}
                 alt="ISO 9001"
                 className="h-13 w-13 object-contain"
               />
 
               <img
-                src="/certifications/kab-logo.png"
+                src={kabLogo}
                 alt="KAB Accredited"
                 className="h-13 w-auto object-contain"
               />
 
               <img
-                src="/certifications/iaf-logo-4.png"
+                src={iafLogo}
                 alt="IAF LOGO"
                 className="h-18 w-auto object-contain"
               />
@@ -85,14 +93,14 @@ const Footer = () => {
             {/* Social Icons */}
             <div className="flex gap-3 mt-10">
               <a
-                href="https://www.linkedin.com/in/imtc-gurmeet-52b8b6392?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                href="https://www.linkedin.com/in/imtc-gurmeet-52b8b6392/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/social/linkedin-3.png"
+                  src={linkedin}
                   alt="LinkedIn"
-                  className="h-9 w-9 object-contain"
+                  className="h-8 w-9 object-contain mt-0.5"
                 />
               </a>
 
@@ -102,7 +110,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/social/facebook-2.png"
+                  src={facebook}
                   alt="Facebook"
                   className="h-9 w-9 object-contain"
                 />
@@ -114,7 +122,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/social/insta-2.png"
+                  src={insta}
                   alt="Instagram"
                   className="h-9 w-9 object-contain"
                 />
@@ -126,22 +134,30 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/social/youtube-2.png"
+                  src={youtube}
                   alt="Youtube"
-                  className="h-9 w-9 object-contain"
+                  className="h-10 w-9 object-contain"
                 />
               </a>
             </div>
 
             {/* Support Numbers (added below, nothing else changed) */}
             <div className="flex flex-col gap-2 mt-4 text-sm text-gray-300">
-              <p
-                href="tel:9315773460"
+              <a
+                href="tel:+919315773460"
                 className="flex items-center gap-2 hover:text-white transition-colors"
               >
                 <FiPhoneCall className="text-lg" />
-                +91-9315773460, +91-9315775056
-              </p>
+                +91-9315773460
+              </a>
+
+              <a
+                href="tel:+919315775056"
+                className="flex items-center gap-2 hover:text-white transition-colors"
+              >
+                <FiPhoneCall className="text-lg" />
+                +91-9315775056
+              </a>
             </div>
           </div>
         </div>

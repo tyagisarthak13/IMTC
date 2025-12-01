@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { Star, Quote, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
-import CountUp from "react-countup";
+import customer2 from "../assets/customer2.png";
+import customer3 from "../assets/customer3.png";
+import customer4 from "../assets/customer4.png";
+import customer5 from "../assets/customer5.png";
+import customer6 from "../assets/customer6.png";
+import customer7 from "../assets/customer7.png";
+import customer8 from "../assets/customer8.png";
 
 const Customer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const testimonials = [
     {
-      img: "/customers/customer1.jpeg",
+      img: customer4,
       name: "Rajesh Kumar",
       location: "Bihar",
       role: "Small Business Owner",
@@ -15,7 +21,7 @@ const Customer = () => {
       rating: 5,
     },
     {
-      img: "/customers/customer2.jpeg",
+      img: customer7,
       name: "Priya Singh",
       location: "West Bengal",
       role: "Shopkeeper",
@@ -23,7 +29,7 @@ const Customer = () => {
       rating: 5,
     },
     {
-      img: "/customers/customer3.jpeg",
+      img: customer6,
       name: "Amit Sharma",
       location: "Madhya Pradesh",
       role: "Village Merchant",
@@ -31,7 +37,7 @@ const Customer = () => {
       rating: 4,
     },
     {
-      img: "/customers/customer4.jpeg",
+      img: customer8,
       name: "Yogesh Patil",
       location: "Maharashtra",
       role: "Retail Store Owner",
@@ -39,7 +45,7 @@ const Customer = () => {
       rating: 5,
     },
     {
-      img: "/customers/customer5.jpeg",
+      img: customer5,
       name: "Kiran Reddy",
       location: "Karnataka",
       role: "Local Merchant",
@@ -47,7 +53,7 @@ const Customer = () => {
       rating: 4,
     },
     {
-      img: "/customers/customer6.jpeg",
+      img: customer2,
       name: "Deepak Joshi",
       location: "Pune",
       role: "General Store Owner",
@@ -55,7 +61,7 @@ const Customer = () => {
       rating: 5,
     },
     {
-      img: "/customers/customer7.jpeg",
+      img: customer3,
       name: "Sushil Kumar",
       location: "Madhya Pradesh",
       role: "General Store Owner",

@@ -1,38 +1,47 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+import alwaysOnIcon from "../assets/alwaysOnIcon.svg";
+import convenientIcon from "../assets/convenientIcon.svg";
+import rbiCompliancesIcon from "../assets/rbiCompliancesIcon.svg";
+import reducedCostIcon from "../assets/reducedCostIcon.svg";
+import paymentModesIcon from "../assets/paymentModesIcon.svg";
+import paymentOutletsIcon from "../assets/paymentOutletsIcon.svg";
+import fastSettlementsIcon from "../assets/fastSettlementsIcon.svg";
+import securePlatformIcon from "../assets/securePlatformIcon.svg";
+
 const Carousel = () => {
   const slides = [
     {
-      img: "/icon_fast_Settlements_ddee4c0443.svg",
+      img: fastSettlementsIcon,
       text: "Fast settlements with 8 cycles in a day",
     },
     {
-      img: "/icon_payment_Outlets_896a9abe0e.svg",
+      img: paymentOutletsIcon,
       text: "1000+ digital channels, 99+ lakh physical outlets to pay",
     },
     {
-      img: "/icon_convenient_fe17a1f7f0.svg",
+      img: convenientIcon,
       text: "Convenient for Customers",
     },
     {
-      img: "/icon_secure_Platform_7934163269.svg",
+      img: securePlatformIcon,
       text: "Secure platform with end-to-end encryption",
     },
     {
-      img: "/icon_rbi_Compliances_c3bc90ce28.svg",
+      img: rbiCompliancesIcon,
       text: "Follows all RBI regulatory compliances",
     },
     {
-      img: "/icon_always_On_ac00956fc3.svg",
+      img: alwaysOnIcon,
       text: "Always on with 24x7 operations and 99.87% uptime",
     },
     {
-      img: "/icon_payment_Modes_d83be67f3b.svg",
+      img: paymentModesIcon,
       text: "12+ payment modes for Customers",
     },
     {
-      img: "/icon_reduced_Cost_119b166d1b.svg",
+      img: reducedCostIcon,
       text: "Reduced cost via a digitalised process",
     },
   ];

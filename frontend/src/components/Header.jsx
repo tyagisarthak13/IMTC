@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router";
 
+import IMTClogo from "../assets/IMTClogo.png";
+
 const Header = () => {
   const location = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -15,7 +17,7 @@ const Header = () => {
         <div className="flex items-center space-x-4 md:space-x-12">
           <Link to="/">
             <img
-              src="/IMTC logo.png"
+              src={IMTClogo}
               alt="Logo"
               className="w-32 md:w-40 lg:w-48 h-10 md:h-12 lg:h-16 object-contain"
             />

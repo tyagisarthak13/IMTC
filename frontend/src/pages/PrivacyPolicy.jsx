@@ -1,5 +1,6 @@
 import React from "react";
 
+import privacypolicyBanner from "../assets/privacypolicyBanner.webp";
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-white">
@@ -20,7 +21,7 @@ const PrivacyPolicy = () => {
       {/* Single Image - Full Width */}
       <div className="w-full px-4 sm:px-8 lg:px-12 py-8">
         <img
-          src="/privacy-policy-banner.webp"
+          src={privacypolicyBanner}
           alt="Privacy Policy"
           className="w-full h-64 object-cover rounded-lg"
           data-aos="fade-in"

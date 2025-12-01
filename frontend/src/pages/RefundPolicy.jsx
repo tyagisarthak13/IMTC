@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router";
 
+import refundPolicy from "../assets/refundPolicy.jpg";
+
 const RefundPolicy = () => {
   return (
     <div className="min-h-screen bg-white">
@@ -21,7 +23,7 @@ const RefundPolicy = () => {
       {/* Single Image - Full Width */}
       <div className="w-full px-4 sm:px-8 lg:px-12 py-8">
         <img
-          src="/refund-policy.jpg"
+          src={refundPolicy}
           alt="Refund Policy"
           className="w-full h-64 object-contain rounded-lg"
           data-aos="fade-up"

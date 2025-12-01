@@ -41,14 +41,19 @@ const Contact = () => {
       setLoading(false);
     }
   };
+
   return (
-    <div className="min-h-screen pb-20 bg-gradient-to-b from-blue-50 to-gray-50 py-20">
-      {/* <h1
-        className="font-extrabold text-indigo-900 text-5xl py-12 text-center drop-shadow-md"
-        data-aos="fade-in"
-      >
-        IMTC Payment Solution LLP
-      </h1> */}
+    <div className="min-h-screen pb-20 bg-gradient-to-b from-blue-50 to-gray-50 ">
+      {/* Simple gradient hero for Contact */}
+      <section className="w-full bg-gradient-to-r from-indigo-900 to-indigo-700 text-white px-6 sm:px-10 lg:px-16 py-13 mb-10 text-center">
+        <div className="max-w-3xl mx-auto" data-aos="fade-up">
+          <h1 className="text-3xl md:text-6xl font-bold mb-3">Contact Us</h1>
+          <p className="text-sm md:text-[18px] opacity-90">
+            Reach out to us for support, business enquiries. We’re just a
+            message away.
+          </p>
+        </div>
+      </section>
 
       <div className="flex justify-center px-4">
         <div
@@ -67,36 +72,48 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="flex flex-col gap-8" data-aos="fade-right">
               <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
-                <div className="flex-1 bg-blue-50 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-300 p-6 flex flex-col items-center justify-center text-center">
-                  <Phone className="text-indigo-900 w-12 h-12 mb-3" />
-                  <h3 className="text-xl font-semibold text-gray-900 mb-1">
-                    Mobile
-                  </h3>
-                  <span className="text-gray-700 font-medium">
-                    +91 9315773460
-                  </span>
-                </div>
+                <a href="tel:+919315773460" className="flex-1">
+                  <div className="bg-blue-50 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-300 p-6 flex flex-col items-center justify-center text-center cursor-pointer">
+                    <Phone className="text-indigo-900 w-12 h-12 mb-3" />
+                    <h3 className="text-xl font-semibold text-gray-900 mb-1">
+                      Mobile
+                    </h3>
+                    <span className="text-gray-700 font-medium">
+                      +91 9315773460
+                    </span>
+                  </div>
+                </a>
 
-                <div className="flex-1 bg-blue-50 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-300 p-6 flex flex-col items-center justify-center text-center">
-                  <Mail className="text-indigo-900 w-12 h-12 mb-3" />
-                  <h3 className="text-xl font-semibold text-gray-900 mb-1">
-                    Email
-                  </h3>
-                  <span className="text-gray-700 font-medium">
-                    imtcgurmeet@gmail.com
-                  </span>
-                </div>
+                <a href="mailto:imtcgurmeet@gmail.com" className="flex-1">
+                  <div className="bg-blue-50 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-300 p-6 flex flex-col items-center justify-center text-center cursor-pointer">
+                    <Mail className="text-indigo-900 w-12 h-12 mb-3" />
+                    <h3 className="text-xl font-semibold text-gray-900 mb-1">
+                      Email
+                    </h3>
+                    <span className="text-gray-700 font-medium">
+                      imtcgurmeet@gmail.com
+                    </span>
+                  </div>
+                </a>
               </div>
 
-              <div className="bg-blue-50 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-300 p-6 flex flex-col items-center justify-center text-center">
-                <MapPin className="text-indigo-900 w-12 h-12 mb-3" />
-                <h3 className="text-xl font-semibold text-gray-900 mb-1">
-                  Location
-                </h3>
-                <span className="text-gray-700 font-medium px-4">
-                  Sector 63, Noida, Uttar Pradesh 201309
-                </span>
-              </div>
+              <a
+                href="https://www.google.com/maps/place/Urest+Society+%26+Integrated+Facility+Management/@28.626951,77.376518,16z/data=!4m6!3m5!1s0x390cef8a45d37eeb:0x4f7208dcb331580b!8m2!3d28.626951!4d77.376518!16s%2Fg%2F11rdc892wh?hl=en&entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="bg-blue-50 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-300 p-6 flex flex-col items-center justify-center text-center cursor-pointer">
+                  <MapPin className="text-indigo-900 w-12 h-12 mb-3" />
+                  <h3 className="text-xl font-semibold text-gray-900 mb-1">
+                    Location
+                  </h3>
+                  <span className="text-gray-700 font-medium px-4">
+                    Cabin No-06, First Floor Ufirm Head Office, H-64, H Block,
+                    Sector 63, Noida, Uttar Pradesh, 201309
+                  </span>
+                </div>
+              </a>
             </div>
 
             <div

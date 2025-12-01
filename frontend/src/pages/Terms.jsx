@@ -1,5 +1,7 @@
 import React from "react";
 
+import termsBanner from "../assets/termsBanner.jpg";
+
 const Terms = () => {
   return (
     <div className="min-h-screen bg-white">
@@ -20,7 +22,7 @@ const Terms = () => {
       {/* Single Image - Full Width */}
       <div className="w-full px-4 sm:px-8 lg:px-12 py-8">
         <img
-          src="/terms.jpg"
+          src={termsBanner}
           alt="Terms and Conditions"
           className="w-full h-64 object-center bg-gray-100 rounded-lg"
           data-aos="fade-up"

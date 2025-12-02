@@ -139,6 +139,7 @@ const Home = () => {
       </section>
 
       {/* Benefits Section */}
+      {/* Benefits Section */}
       <section className="bg-indigo-900 py-16">
         <h2 className="text-white text-center text-4xl md:text-5xl font-bold mb-10">
           Benefits
@@ -149,36 +150,40 @@ const Home = () => {
         >
           <Carousel />
         </div>
+      </section>
 
-        {/* Certification Logos */}
-        <div className="mt-12" data-aos="fade-in">
-          <div
-            className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-8 mt-12"
-            data-aos="fade-in"
-          >
-            <div className="bg-white p-5 rounded-xl shadow-md h-50 w-60 flex items-center justify-center">
-              <img
-                src={iso9001}
-                alt="ISO 9001"
-                className="h-40 w-auto object-contain"
-              />
-            </div>
+      {/* Certifications Section */}
+      <section className="bg-indigo-900 py-16">
+        <h2 className="text-white text-center text-4xl md:text-5xl font-bold mb-10">
+          Certifications
+        </h2>
 
-            <div className="bg-white p-5 rounded-xl shadow-md h-50 w-60 flex items-center justify-center">
-              <img
-                src={kabLogo}
-                alt="KAB Accredited"
-                className="h-40 w-auto object-contain"
-              />
-            </div>
+        <div
+          className="mt-12 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-8 px-6"
+          data-aos="fade-in"
+        >
+          <div className="bg-white p-5 rounded-xl shadow-md h-50 w-60 flex items-center justify-center">
+            <img
+              src={iso9001}
+              alt="ISO 9001"
+              className="h-40 w-auto object-contain"
+            />
+          </div>
 
-            <div className="bg-white p-5 rounded-xl shadow-md h-50 w-60 flex items-center justify-center">
-              <img
-                src={iafLogo}
-                alt="IAF Logo"
-                className="h-40 w-auto object-contain"
-              />
-            </div>
+          <div className="bg-white p-5 rounded-xl shadow-md h-50 w-60 flex items-center justify-center">
+            <img
+              src={kabLogo}
+              alt="KAB Accredited"
+              className="h-40 w-auto object-contain"
+            />
+          </div>
+
+          <div className="bg-white p-5 rounded-xl shadow-md h-50 w-60 flex items-center justify-center">
+            <img
+              src={iafLogo}
+              alt="IAF Logo"
+              className="h-40 w-auto object-contain"
+            />
           </div>
         </div>
       </section>

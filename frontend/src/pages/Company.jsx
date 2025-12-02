@@ -25,7 +25,7 @@ const Company = () => {
         </h1>
         <p className="max-w-2xl mx-auto text-lg opacity-90" data-aos="fade-up">
           Empowering digital finance through innovation, trust, and
-          accessibility for every Indian.
+          accessibility.
         </p>
       </section>
 

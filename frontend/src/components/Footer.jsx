@@ -145,18 +145,20 @@ const Footer = () => {
             <div className="flex flex-col gap-2 mt-4 text-sm text-gray-300">
               <a
                 href="tel:+919315773460"
-                className="flex items-center gap-2 hover:text-white transition-colors"
+                className="flex items-center gap-1 hover:text-white transition-colors whitespace-nowrap"
               >
                 <FiPhoneCall className="text-lg" />
-                +91-9315773460
+                +91-9315775056
+                <span>(IT & Tech)</span>
               </a>
 
               <a
                 href="tel:+919315775056"
-                className="flex items-center gap-2 hover:text-white transition-colors"
+                className="flex items-center gap-1 hover:text-white transition-colors whitespace-nowrap"
               >
                 <FiPhoneCall className="text-lg" />
-                +91-9315775056
+                +91-9315773460
+                <span>(Customer Support)</span>
               </a>
             </div>
           </div>

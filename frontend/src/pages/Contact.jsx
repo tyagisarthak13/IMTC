@@ -109,7 +109,6 @@ const Contact = () => {
                     Location
                   </h3>
                   <span className="text-gray-700 font-medium px-4">
-                    Cabin No-06, First Floor Ufirm Head Office, H-64, H Block,
                     Sector 63, Noida, Uttar Pradesh, 201309
                   </span>
                 </div>
